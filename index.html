@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-10-30 Sun 15:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oolook: Style for org-mode</title>
+<meta name="author" content="Denis Volk" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="static/oolook.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+<script src="static/jquery-3.x-git.min.js"></script>
+<script src="static/oolook.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Oolook: Style for org-mode</h1>
+
+<div id="outline-container-orgaad3990" class="outline-2">
+<h2 id="orgaad3990">What is Oolook?</h2>
+<div class="outline-text-2" id="text-orgaad3990">
+<p>
+<a href="https://github.com/dvolk/oolook">Oolook</a> changes the look of <a href="https://orgmode.org">Org-mode</a> HTML exported files. It's a bit of CSS, a bit of Javascript, and some bundled fonts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd2294d" class="outline-2">
+<h2 id="orgbd2294d">What is org-mode?</h2>
+<div class="outline-text-2" id="text-orgbd2294d">
+<p>
+Org-mode is an extension for the <a href="https://emacs.org">Emacs</a> editor that provides note-taking functionality. With features such as code blocks and spreadsheet functionality, it is a very powerful way to write text documents. Org-mode also provides a function to export org files to HTML, with which you can write simple web pages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org894d9bb" class="outline-2">
+<h2 id="org894d9bb">What does Oolook look like?</h2>
+<div class="outline-text-2" id="text-org894d9bb">
+<p>
+You're looking at it right now! See <a href="#orgaebadbd">How to use Oolook</a> below.
+</p>
+</div>
+
+<div id="outline-container-org9f39131" class="outline-3">
+<h3 id="org9f39131">Org-mode tables</h3>
+<div class="outline-text-3" id="text-org9f39131">
+<p>
+Tables are a great feature of org-mode!
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Item</th>
+<th scope="col" class="org-right">duration (min)</th>
+<th scope="col" class="org-right">starting (time AM)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Presentation by the candidate</td>
+<td class="org-right">20</td>
+<td class="org-right">8:30</td>
+</tr>
+
+<tr>
+<td class="org-left">Presentation Questions</td>
+<td class="org-right">10</td>
+<td class="org-right">08:50</td>
+</tr>
+
+<tr>
+<td class="org-left">Break</td>
+<td class="org-right">15</td>
+<td class="org-right">09:00</td>
+</tr>
+
+<tr>
+<td class="org-left">Main interview</td>
+<td class="org-right">90</td>
+<td class="org-right">09:15</td>
+</tr>
+
+<tr>
+<td class="org-left">Break</td>
+<td class="org-right">15</td>
+<td class="org-right">10:45</td>
+</tr>
+
+<tr>
+<td class="org-left">HR Interview</td>
+<td class="org-right">60</td>
+<td class="org-right">11:00</td>
+</tr>
+
+<tr>
+<td class="org-left">optional Lunch / Coffee</td>
+<td class="org-right">60</td>
+<td class="org-right">12:00</td>
+</tr>
+
+<tr>
+<td class="org-left">optional interview</td>
+<td class="org-right">30</td>
+<td class="org-right">13:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf3740a" class="outline-3">
+<h3 id="orgbf3740a">Image with caption</h3>
+<div class="outline-text-3" id="text-orgbf3740a">
+<p>
+This shows how to embed an image file with a caption.
+</p>
+
+
+<div id="orga1db6e9" class="figure">
+<p><img src="static/Lorrain.seaport.jpg" alt="Lorrain.seaport.jpg" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Port Scene with the Villa Medici</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2e0faa7" class="outline-3">
+<h3 id="org2e0faa7">Code block example</h3>
+<div class="outline-text-3" id="text-org2e0faa7">
+<p>
+This code demonstrates how to draw a graph with Python and Matplotlib and then display it in org-mode.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #66D9EF;">import</span> numpy <span style="color: #66D9EF;">as</span> np
+<span style="color: #66D9EF;">import</span> matplotlib.pyplot <span style="color: #66D9EF;">as</span> plt
+<span style="color: #66D9EF;">import</span> matplotlib <span style="color: #66D9EF;">as</span> mpl
+mpl.<span style="color: #FF84C9;">rcParams</span><span style="color: #66D9EF;">[</span><span style="color: #C1CAFF;">'figure.dpi'</span><span style="color: #66D9EF;">]</span> = 300
+plt.axis<span style="color: #66D9EF;">(</span><span style="color: #C1CAFF;">'off'</span><span style="color: #66D9EF;">)</span>
+
+<span style="color: #66D9EF;">for</span> x <span style="color: #66D9EF;">in</span> <span style="color: #A6E22E;">range</span><span style="color: #66D9EF;">(</span>0, 6<span style="color: #66D9EF;">)</span>:
+    plt.plot<span style="color: #66D9EF;">(</span>np.cos<span style="color: #A6E22E;">(</span>np.arange<span style="color: #FF84C9;">(</span>0, 4 * np.pi, 0.01<span style="color: #FF84C9;">)</span> + x/2<span style="color: #A6E22E;">)</span><span style="color: #66D9EF;">)</span>
+plt.savefig<span style="color: #66D9EF;">(</span><span style="color: #C1CAFF;">"example.png"</span>, bbox_inches=<span style="color: #C1CAFF;">'tight'</span>, pad_inches=0<span style="color: #66D9EF;">)</span>
+</pre>
+</div>
+
+
+<div id="orgfc0b09d" class="figure">
+<p><img src="static/example.png" alt="example.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Some sine waves from matplotlib</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaebadbd" class="outline-2">
+<h2 id="orgaebadbd">How to use Oolook</h2>
+<div class="outline-text-2" id="text-orgaebadbd">
+</div>
+<div id="outline-container-orga15a633" class="outline-3">
+<h3 id="orga15a633">Download or git clone the Oolook repo</h3>
+<div class="outline-text-3" id="text-orga15a633">
+<div class="org-src-container">
+<pre class="src src-bash">git clone https://github.com/dvolk/oolook
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org99226ea" class="outline-3">
+<h3 id="org99226ea">Add Oolook to your org file</h3>
+<div class="outline-text-3" id="text-org99226ea">
+<p>
+Put the following on the top of your org file:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">#+OPTIONS: html-style:nil
+#+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+HTML_HEAD: &lt;<span style="color: #84B5FF;">link</span> <span style="color: #FF84C9;">rel</span>=<span style="color: #C1CAFF;">"stylesheet"</span> <span style="color: #FF84C9;">type</span>=<span style="color: #C1CAFF;">"text/css"</span> <span style="color: #FF84C9;">href</span>=<span style="color: #C1CAFF;">"static/oolook.css"</span> /&gt;
+#+HTML_HEAD: &lt;<span style="color: #84B5FF;">link</span> <span style="color: #FF84C9;">rel</span>=<span style="color: #C1CAFF;">"stylesheet"</span> <span style="color: #FF84C9;">type</span>=<span style="color: #C1CAFF;">"text/css"</span> <span style="color: #FF84C9;">href</span>=<span style="color: #C1CAFF;">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"</span> /&gt;
+#+HTML_HEAD: &lt;<span style="color: #84B5FF;">script</span> <span style="color: #FF84C9;">src</span>=<span style="color: #C1CAFF;">"static/jquery-3.x-git.min.js"</span>&gt;&lt;/<span style="color: #84B5FF;">script</span>&gt;
+#+HTML_HEAD: &lt;<span style="color: #84B5FF;">script</span> <span style="color: #FF84C9;">src</span>=<span style="color: #C1CAFF;">"static/oolook.js"</span>&gt;&lt;/<span style="color: #84B5FF;">script</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org463ef70" class="outline-3">
+<h3 id="org463ef70">Export your org file to HTML</h3>
+<div class="outline-text-3" id="text-org463ef70">
+<p>
+Press <code>C-c C-e h h</code> to export an org file to HTML.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6c2babd" class="outline-2">
+<h2 id="org6c2babd">Excerpt from Scaramouche</h2>
+<div class="outline-text-2" id="text-org6c2babd">
+<p>
+<i>The following is chapter 1 of Scaramouche. It's here to demonstrate the column layout, but it's also a pretty good book.</i>
+</p>
+
+<p>
+He was born with a gift of laughter and a sense that the world was mad. And that was all his patrimony. His very paternity was obscure, although the village of Gavrillac had long since dispelled the cloud of mystery that hung about it. Those simple Brittany folk were not so simple as to be deceived by a pretended relationship which did not even possess the virtue of originality. When a nobleman, for no apparent reason, announces himself the godfather of an infant fetched no man knew whence, and thereafter cares for the lad's rearing and education, the most unsophisticated of country folk perfectly understand the situation. And so the good people of Gavrillac permitted themselves no illusions on the score of the real relationship between André-Louis Moreau—as the lad had been named—and Quintin de Kercadiou, Lord of Gavrillac, who dwelt in the big grey house that dominated from its eminence the village clustering below.
+</p>
+
+<p>
+André-Louis had learnt his letters at the village school, lodged the while with old Rabouillet, the attorney, who in the capacity of fiscal intendant, looked after the affairs of M. de Kercadiou. Thereafter, at the age of fifteen, he had been packed off to Paris, to the Lycée of Louis Le Grand, to study the law which he was now returned to practise in conjunction with Rabouillet. All this at the charges of his godfather, M. de Kercadiou, who by placing him once more under the tutelage of Rabouillet would seem thereby quite clearly to be making provision for his future.
+</p>
+
+<p>
+André-Louis, on his side, had made the most of his opportunities. You behold him at the age of four-and-twenty stuffed with learning enough to produce an intellectual indigestion in an ordinary mind. Out of his zestful study of Man, from Thucydides to the Encyclopædists, from Seneca to Rousseau, he had confirmed into an unassailable conviction his earliest conscious impressions of the general insanity of his own species. Nor can I discover that anything in his eventful life ever afterwards caused him to waver in that opinion.
+</p>
+
+<p>
+In body he was a slight wisp of a fellow, scarcely above middle height, with a lean, astute countenance, prominent of nose and cheek-bones, and with lank, black hair that reached almost to his shoulders. His mouth was long, thin-lipped, and humorous. He was only just redeemed from ugliness by the splendour of a pair of ever-questing, luminous eyes, so dark as to be almost black. Of the whimsical quality of his mind and his rare gift of graceful expression, his writings — unfortunately but too scanty—and particularly his Confessions, afford us very ample evidence. Of his gift of oratory he was hardly conscious yet, although he had already achieved a certain fame for it in the Literary Chamber of Rennes—one of those clubs by now ubiquitous in the land, in which the intellectual youth of France foregathered to study and discuss the new philosophies that were permeating social life. But the fame he had acquired there was hardly enviable. He was too impish, too caustic, too much disposed—so thought his colleagues—to ridicule their sublime theories for the regeneration of mankind. Himself he protested that he merely held them up to the mirror of truth, and that it was not his fault if when reflected there they looked ridiculous.
+</p>
+
+<p>
+All that he achieved by this was to exasperate; and his expulsion from a society grown mistrustful of him must already have followed but for his friend, Philippe de Vilmorin, a divinity student of Rennes, who, himself, was one of the most popular members of the Literary Chamber.
+</p>
+
+<p>
+Coming to Gavrillac on a November morning, laden with news of the political storms which were then gathering over France, Philippe found in that sleepy Breton village matter to quicken his already lively indignation. A peasant of Gavrillac, named Mabey, had been shot dead that morning in the woods of Meupont, across the river, by a gamekeeper of the Marquis de La Tour d'Azyr. The unfortunate fellow had been caught in the act of taking a pheasant from a snare, and the gamekeeper had acted under explicit orders from his master.
+</p>
+
+<p>
+Infuriated by an act of tyranny so absolute and merciless, M. de Vilmorin proposed to lay the matter before M. de Kercadiou. Mabey was a vassal of Gavrillac, and Vilmorin hoped to move the Lord of Gavrillac to demand at least some measure of reparation for the widow and the three orphans which that brutal deed had made.
+</p>
+
+<p>
+But because André-Louis was Philippe's dearest friend—indeed, his almost brother—the young seminarist sought him out in the first instance. He found him at breakfast alone in the long, low-ceilinged, white-panelled dining-room at Rabouillet's—the only home that André-Louis had ever known—and after embracing him, deafened him with his denunciation of M. de La Tour d'Azyr.
+</p>
+
+<p>
+"I have heard of it already," said André-Louis.
+</p>
+
+<p>
+"You speak as if the thing had not surprised you," his friend reproached him.
+</p>
+
+<p>
+"Nothing beastly can surprise me when done by a beast. And La Tour d'Azyr is a beast, as all the world knows. The more fool Mabey for stealing his pheasants. He should have stolen somebody else's."
+</p>
+
+
+<div id="org93f9f55" class="figure">
+<p><img src="static/Pheasant.jpg" alt="Pheasant.jpg" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Pheasant.jpg. source: wikipedia</p>
+</div>
+
+<p>
+"Is that all you have to say about it?"
+</p>
+
+<p>
+"What more is there to say? I've a practical mind, I hope."
+</p>
+
+<p>
+"What more there is to say I propose to say to your godfather, M. de Kercadiou. I shall appeal to him for justice."
+</p>
+
+<p>
+"Against M. de La Tour d'Azyr?" André-Louis raised his eyebrows.
+</p>
+
+<p>
+"Why not?"
+</p>
+
+<p>
+"My dear ingenuous Philippe, dog doesn't eat dog."
+</p>
+
+<p>
+"You are unjust to your godfather. He is a humane man."
+</p>
+
+<p>
+"Oh, as humane as you please. But this isn't a question of humanity. It's a question of game-laws."
+</p>
+
+<p>
+M. de Vilmorin tossed his long arms to Heaven in disgust. He was a tall, slender young gentleman, a year or two younger than André-Louis. He was very soberly dressed in black, as became a seminarist, with white bands at wrists and throat and silver buckles to his shoes. His neatly clubbed brown hair was innocent of powder.
+</p>
+
+<p>
+"You talk like a lawyer," he exploded.
+</p>
+
+<p>
+"Naturally. But don't waste anger on me on that account. Tell me what you want me to do."
+</p>
+
+<p>
+"I want you to come to M. de Kercadiou with me, and to use your influence to obtain justice. I suppose I am asking too much."
+</p>
+
+<p>
+"My dear Philippe, I exist to serve you. I warn you that it is a futile quest; but give me leave to finish my breakfast, and I am at your orders."
+</p>
+
+<p>
+M. de Vilmorin dropped into a winged armchair by the well-swept hearth, on which a piled-up fire of pine logs was burning cheerily. And whilst he waited now he gave his friend the latest news of the events in Rennes. Young, ardent, enthusiastic, and inspired by Utopian ideals, he passionately denounced the rebellious attitude of the privileged.
+</p>
+
+<p>
+André-Louis, already fully aware of the trend of feeling in the ranks of an order in whose deliberations he took part as the representative of a nobleman, was not at all surprised by what he heard. M. de Vilmorin found it exasperating that his friend should apparently decline to share his own indignation.
+</p>
+
+<p>
+"Don't you see what it means?" he cried. "The nobles, by disobeying the King, are striking at the very foundations of the throne. Don't they perceive that their very existence depends upon it; that if the throne falls over, it is they who stand nearest to it who will be crushed? Don't they see that?"
+</p>
+
+<p>
+"Evidently not. They are just governing classes, and I never heard of governing classes that had eyes for anything but their own profit."
+</p>
+
+<p>
+"That is our grievance. That is what we are going to change."
+</p>
+
+<p>
+"You are going to abolish governing classes? An interesting experiment. I believe it was the original plan of creation, and it might have succeeded but for Cain."
+</p>
+
+<p>
+"What we are going to do," said M. de Vilmorin, curbing his exasperation, "is to transfer the government to other hands."
+</p>
+
+<p>
+"And you think that will make a difference?"
+</p>
+
+<p>
+"I know it will."
+</p>
+
+<p>
+"Ah! I take it that being now in minor orders, you already possess the confidence of the Almighty. He will have confided to you His intention of changing the pattern of mankind."
+</p>
+
+<p>
+M. de Vilmorin's fine ascetic face grew overcast.
+</p>
+
+<p>
+"You are profane, André," he reproved his friend.
+</p>
+
+<p>
+"I assure you that I am quite serious. To do what you imply would require nothing short of divine intervention. You must change man, not systems. Can you and our vapouring friends of the Literary Chamber of Rennes, or any other learned society of France, devise a system of government that has never yet been tried? Surely not. And can they say of any system tried that it proved other than a failure in the end? My dear Philippe, the future is to be read with certainty only in the past. Ab actu ad posse valet consecutio. Man never changes. He is always greedy, always acquisitive, always vile. I am speaking of Man in the bulk."
+</p>
+
+<p>
+"Do you pretend that it is impossible to ameliorate the lot of the people?" M. de Vilmorin challenged him.
+</p>
+
+<p>
+"When you say the people you mean, of course, the populace. Will you abolish it? That is the only way to ameliorate its lot, for as long as it remains populace its lot will be damnation."
+</p>
+
+<p>
+"You argue, of course, for the side that employs you. That is natural, I suppose." M. de Vilmorin spoke between sorrow and indignation.
+</p>
+
+<p>
+"On the contrary, I seek to argue with absolute detachment. Let us test these ideas of yours. To what form of government do you aspire? A republic, it is to be inferred from what you have said. Well, you have it already. France in reality is a republic to-day."
+</p>
+
+<p>
+Philippe stared at him. "You are being paradoxical, I think. What of the King?"
+</p>
+
+<p>
+"The King? All the world knows there has been no king in France since Louis XIV. There is an obese gentleman at Versailles who wears the crown, but the very news you bring shows for how little he really counts. It is the nobles and clergy who sit in the high places, with the people of France harnessed under their feet, who are the real rulers. That is why I say that France is a republic; she is a republic built on the best pattern—the Roman pattern. Then, as now, there were great patrician families in luxury, preserving for themselves power and wealth, and what else is accounted worth possessing; and there was the populace crushed and groaning, sweating, bleeding, starving, and perishing in the Roman kennels. That was a republic; the mightiest we have seen."
+</p>
+
+<p>
+Philippe strove with his impatience. "At least you will admit—you have, in fact, admitted it—that we could not be worse governed than we are?"
+</p>
+
+<p>
+"That is not the point. The point is should we be better governed if we replaced the present ruling class by another? Without some guarantee of that I should be the last to lift a finger to effect a change. And what guarantees can you give? What is the class that aims at government? I will tell you. The bourgeoisie."
+</p>
+
+<p>
+"What?"
+</p>
+
+<p>
+"That startles you, eh? Truth is so often disconcerting. You hadn't thought of it? Well, think of it now. Look well into this Nantes manifesto. Who are the authors of it?"
+</p>
+
+<p>
+"I can tell you who it was constrained the municipality of Nantes to send it to the King. Some ten thousand workmen—shipwrights, weavers, labourers, and artisans of every kind."
+</p>
+
+<p>
+"Stimulated to it, driven to it, by their employers, the wealthy traders and shipowners of that city," André-Louis replied. "I have a habit of observing things at close quarters, which is why our colleagues of the Literary Chamber dislike me so cordially in debate. Where I delve they but skim. Behind those labourers and artisans of Nantes, counselling them, urging on these poor, stupid, ignorant toilers to shed their blood in pursuit of the will o' the wisp of freedom, are the sail-makers, the spinners, the ship-owners and the slave-traders. The slave-traders! The men who live and grow rich by a traffic in human flesh and blood in the colonies, are conducting at home a campaign in the sacred name of liberty! Don't you see that the whole movement is a movement of hucksters and traders and peddling vassals swollen by wealth into envy of the power that lies in birth alone? The money-changers in Paris who hold the bonds in the national debt, seeing the parlous financial condition of the State, tremble at the thought that it may lie in the power of a single man to cancel the debt by bankruptcy. To secure themselves they are burrowing underground to overthrow a state and build upon its ruins a new one in which they shall be the masters. And to accomplish this they inflame the people. Already in Dauphiny we have seen blood run like water—the blood of the populace, always the blood of the populace. Now in Brittany we may see the like. And if in the end the new ideas prevail? if the seigneurial rule is overthrown, what then? You will have exchanged an aristocracy for a plutocracy. Is that worth while? Do you think that under money-changers and slave-traders and men who have waxed rich in other ways by the ignoble arts of buying and selling, the lot of the people will be any better than under their priests and nobles? Has it ever occurred to you, Philippe, what it is that makes the rule of the nobles so intolerable? Acquisitiveness. Acquisitiveness is the curse of mankind. And shall you expect less acquisitiveness in men who have built themselves up by acquisitiveness? Oh, I am ready to admit that the present government is execrable, unjust, tyrannical—what you will; but I beg you to look ahead, and to see that the government for which it is aimed at exchanging it may be infinitely worse."
+</p>
+
+<p>
+Philippe sat thoughtful a moment. Then he returned to the attack.
+</p>
+
+<p>
+"You do not speak of the abuses, the horrible, intolerable abuses of power under which we labour at present."
+</p>
+
+<p>
+"Where there is power there will always be the abuse of it."
+</p>
+
+<p>
+"Not if the tenure of power is dependent upon its equitable administration."
+</p>
+
+<p>
+"The tenure of power is power. We cannot dictate to those who hold it."
+</p>
+
+<p>
+"The people can—the people in its might."
+</p>
+
+<p>
+"Again I ask you, when you say the people do you mean the populace? You do. What power can the populace wield? It can run wild. It can burn and slay for a time. But enduring power it cannot wield, because power demands qualities which the populace does not possess, or it would not be populace. The inevitable, tragic corollary of civilization is populace. For the rest, abuses can be corrected by equity; and equity, if it is not found in the enlightened, is not to be found at all. M. Necker is to set about correcting abuses, and limiting privileges. That is decided. To that end the States General are to assemble."
+</p>
+
+<p>
+"And a promising beginning we have made in Brittany, as Heaven hears me!" cried Philippe.
+</p>
+
+<p>
+"Pooh! That is nothing. Naturally the nobles will not yield without a struggle. It is a futile and ridiculous struggle—but then&#x2026; it is human nature, I suppose, to be futile and ridiculous."
+</p>
+
+<p>
+M. de Vilmorin became witheringly sarcastic. " Probably you will also qualify the shooting of Mabey as futile and ridiculous. I should even be prepared to hear you argue in defence of the Marquis de La Tour d'Azyr that his gamekeeper was merciful in shooting Mabey, since the alternative would have been a life-sentence to the galleys."
+</p>
+
+<p>
+André-Louis drank the remainder of his chocolate; set down his cup, and pushed back his chair, his breakfast done.
+</p>
+
+<p>
+"I confess that I have not your big charity, my dear Philippe. I am touched by Mabey's fate. But, having conquered the shock of this news to my emotions, I do not forget that, after all, Mabey was thieving when he met his death."
+</p>
+
+<p>
+M. de Vilmorin heaved himself up in his indignation.
+</p>
+
+<p>
+"That is the point of view to be expected in one who is the assistant fiscal intendant of a nobleman, and the delegate of a nobleman to the States of Brittany."
+</p>
+
+<p>
+"Philippe, is that just? You are angry with me!" he cried, in real solicitude.
+</p>
+
+<p>
+"I am hurt," Vilmorin admitted. "I am deeply hurt by your attitude. And I am not alone in resenting your reactionary tendencies. Do you know that the Literary Chamber is seriously considering your expulsion?"
+</p>
+
+<p>
+André-Louis shrugged. "That neither surprises nor troubles me."
+</p>
+
+<p>
+M. de Vilmorin swept on, passionately: "Sometimes I think that you have no heart. With you it is always the law, never equity. It occurs to me, André, that I was mistaken in coming to you. You are not likely to be of assistance to me in my interview with M. de Kercadiou." He took up his hat, clearly with the intention of departing.
+</p>
+
+<p>
+André-Louis sprang up and caught him by the arm.
+</p>
+
+<p>
+"I vow," said he, "that this is the last time ever I shall consent to talk law or politics with you, Philippe. I love you too well to quarrel with you over other men's affairs."
+</p>
+
+<p>
+"But I make them my own," Philippe insisted vehemently.
+</p>
+
+<p>
+"Of course you do, and I love you for it. It is right that you should. You are to be a priest; and everybody's business is a priest's business. Whereas I am a lawyer—the fiscal intendant of a nobleman, as you say—and a lawyer's business is the business of his client. That is the difference between us. Nevertheless, you are not going to shake me off."
+</p>
+
+<p>
+"But I tell you frankly, now that I come to think of it, that I should prefer you did not see M. de Kercadiou with me. Your duty to your client cannot be a help to me." His wrath had passed; but his determination remained firm, based upon the reason he gave.
+</p>
+
+<p>
+"Very well," said André-Louis. "It shall be as you please. But nothing shall prevent me at least from walking with you as far as the château, and waiting for you while you make your appeal to M. de Kercadiou."
+</p>
+
+<p>
+And so they left the house good friends, for the sweetness of M. de Vilmorin's nature did not admit of rancour, and together they took their way up the steep main street of Gavrillac.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Denis Volk</p>
+<p class="date">Created: 2022-10-30 Sun 15:46</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
