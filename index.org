@@ -1,10 +1,10 @@
 #+OPTIONS: html-style:nil
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/oolook.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="oolook/oolook.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-#+HTML_HEAD: <script src="static/jquery-3.x-git.min.js"></script>
-#+HTML_HEAD: <script src="static/oolook.js"></script>
+#+HTML_HEAD: <script src="oolook/jquery-3.x-git.min.js"></script>
+#+HTML_HEAD: <script src="oolook/oolook.js"></script>
 
 #+TITLE: Oolook: Style for org-mode
 #+AUTHOR: Denis Volk
@@ -41,7 +41,7 @@ Tables are a great feature of org-mode!
 This shows how to embed an image file with a caption.
 
 #+CAPTION: Port Scene with the Villa Medici
-[[file:static/Lorrain.seaport.jpg]]
+[[file:images/Lorrain.seaport.jpg]]
 
 
 ** Code block example
@@ -64,7 +64,7 @@ This code demonstrates how to draw a graph with Python and Matplotlib and then d
 : None
 
 #+CAPTION: Some sine waves from matplotlib
-file:static/example.png
+file:images/example.png
 
 * How to use Oolook
 
@@ -82,10 +82,10 @@ Put the following on the top of your org file:
 #+OPTIONS: html-style:nil
 #+OPTIONS: num:nil
 #+OPTIONS: toc:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="static/oolook.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="oolook/oolook.css" />
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-#+HTML_HEAD: <script src="static/jquery-3.x-git.min.js"></script>
-#+HTML_HEAD: <script src="static/oolook.js"></script>
+#+HTML_HEAD: <script src="oolook/jquery-3.x-git.min.js"></script>
+#+HTML_HEAD: <script src="oolook/oolook.js"></script>
 #+end_src
 
 ** Export your org file to HTML
@@ -119,7 +119,7 @@ But because André-Louis was Philippe's dearest friend—indeed, his almost brot
 "Nothing beastly can surprise me when done by a beast. And La Tour d'Azyr is a beast, as all the world knows. The more fool Mabey for stealing his pheasants. He should have stolen somebody else's."
 
 #+CAPTION: Pheasant.jpg. source: wikipedia
-[[file:static/Pheasant.jpg]]
+[[file:images/Pheasant.jpg]]
 
 "Is that all you have to say about it?"
 

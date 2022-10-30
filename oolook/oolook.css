@@ -49,6 +49,7 @@ div#text-table-of-contents li a {
 
 pre {
     font-family: "Jetbrains Mono", Monospace;
+    font-size: 15px;
     white-space: pre-wrap;
 }
 
@@ -58,7 +59,7 @@ li {
 
 .src {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     padding: 10px;
     border-radius: 5px;
     background-color: black;
