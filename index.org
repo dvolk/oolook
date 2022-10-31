@@ -5,6 +5,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 #+HTML_HEAD: <script src="oolook/jquery-3.x-git.min.js"></script>
 #+HTML_HEAD: <script src="oolook/oolook.js"></script>
+#+HTML_HEAD: <link rel="icon" type="image/png" href="favicon.png">
 
 #+TITLE: Oolook: Style for org-mode
 #+AUTHOR: Denis Volk
