@@ -8,6 +8,31 @@ $(document).ready(function() {
   $("h2").css("border-bottom", "5px solid #ddd");
   $("h3").prepend("far:hand-point-right ")
 
+  // add fontawesome icons as list icons
+  $("ul").addClass("fa-ul");
+  $("ul").css("--fa-li-margin", "1.5em");
+  $("li").each(function() {
+    let elem = $(this);
+    elem.prepend("<span class='fa-li'><i class='far fa-star'></i></span>");
+  });
+
+  // move heading dates into title
+  // heading dates are identified by being the next paragraph after
+  // a heading in the format yyyy-mm-dd
+  var is_date = new RegExp(/\d{4}-\d{2}-\d{2}/);
+  $(":header").each(function() {
+    let h2_elem = $(this);
+    let next_elem = h2_elem.next();
+    if (next_elem.is("div") && next_elem.has("p").length == 1) {
+      let p_elem = $(next_elem.children("p")[0]);
+      let text_is_date = is_date.test(p_elem.text().trim())
+      if (text_is_date) {
+        p_elem.hide();
+        h2_elem.append("<span style='color: #444; float: right'><small>" + p_elem.text() + "</small></span>");
+      }
+    }
+  });
+
   // process fontawesome icons
   $("body").html($("body").html().replace(/far:([^\s]*)/g, '<i class="far fa-fw fa-$1"></i>'));
   $("body").html($("body").html().replace(/fas:([^\s]*)/g, '<i class="fa-solid fa-fw fa-$1"></i>'));

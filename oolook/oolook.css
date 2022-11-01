@@ -42,7 +42,7 @@ p a {
     color: seagreen;
 }
 
-div#text-table-of-contents li a {
+li a {
     text-decoration: none;
     color: seagreen;
 }
@@ -53,8 +53,9 @@ pre {
     white-space: pre-wrap;
 }
 
-li {
-    list-style: none;
+ul {
+    list-style: circle;
+    padding-left: 20px;
 }
 
 .src {
