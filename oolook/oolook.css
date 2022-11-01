@@ -103,7 +103,9 @@ th, td {
     color: #666;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 .title {
     text-align: center;
