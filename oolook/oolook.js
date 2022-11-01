@@ -36,7 +36,6 @@ $(document).ready(function() {
   // add target=_blank to all http links and links that contain image tags
   $("a").each(function() {
     let elem = $(this);
-    console.log(elem.has("img"));
     if(elem.attr("href").slice(0,4) == "http" || elem.has("img").length) {
       elem.attr("target", "_blank");
     }
