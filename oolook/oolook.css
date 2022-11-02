@@ -16,13 +16,33 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Light mode */
+:root {
+    --body-color: #333;
+    --body-bg-color: white;
+    --link-color: seagreen;
+    --block-bg-color: black;
+    --figure-color: #666;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg-color: black;
+        --body-color: white;
+        --link-color: aquamarine;
+        --block-bg-color: #123;
+        --figure-color: #999;
+    }
+}
+
 body {
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     margin: auto;
     line-height: 1.3;
-    color: #333;
-    background-color: white;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
     padding-bottom: 50px;
 }
 
@@ -34,17 +54,17 @@ body {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--body-color);
 }
 
 p a {
     text-decoration: none;
-    color: seagreen;
+    color: var(--link-color);
 }
 
 li a {
     text-decoration: none;
-    color: seagreen;
+    color: var(--link-color);
 }
 
 pre {
@@ -63,7 +83,7 @@ ul {
     font-size: 15px;
     padding: 10px;
     border-radius: 5px;
-    background-color: black;
+    background-color: var(--block-bg-color);
 }
 
 img {
@@ -101,11 +121,7 @@ th, td {
 .figure p {
     margin: 0px;
     font-size: 0.9em;
-    color: #666;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+    color: var(--figure-color);
 }
 
 .title {
