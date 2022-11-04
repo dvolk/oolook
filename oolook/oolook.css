@@ -23,6 +23,8 @@
     --link-color: seagreen;
     --block-bg-color: black;
     --figure-color: #666;
+    --table-bg-color: white;
+    --table-bg-color-2nd: #eee;
 }
 
 /* Dark mode */
@@ -33,6 +35,8 @@
         --link-color: aquamarine;
         --block-bg-color: #123;
         --figure-color: #999;
+        --table-bg-color: black;
+        --table-bg-color-2nd: #123;
     }
 }
 
@@ -67,7 +71,7 @@ li a {
     color: var(--link-color);
 }
 
-pre {
+pre, .code {
     font-family: "Jetbrains Mono", Monospace;
     font-size: 15px;
     white-space: pre-wrap;
@@ -96,6 +100,7 @@ table, th, tr, td, thead, tbody, colgroup {
 }
 
 table {
+    background-color: var(--table-bg-color);
     border: 0;
     width: 100%;
 }
@@ -112,6 +117,11 @@ th {
 
 th, td {
     border-bottom: 0px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-bg-color-2nd);;
+    color: var(--body-color);
 }
 
 .figure {
